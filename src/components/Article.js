@@ -2,6 +2,8 @@ import React from 'react';
 import Drawers from '../images/drawers.jpg';
 import '../App.css';
 import Avatar from '../images/avatar-michelle.jpg';
+import PopoverPopupState from './Share';
+
 export default function Article() {
   return (
     <div className="full-card">
@@ -20,9 +22,11 @@ export default function Article() {
           <img src={Avatar} className="avatar" />
           <div className='avatar-description'>
             <h4>Michelle Appleton</h4>
-            <span>28 Jun 2020</span>
+            <p>28 Jun 2020</p>
           </div>
+          <PopoverPopupState/>
         </div>
+        
       </div>
     </div>
   );
